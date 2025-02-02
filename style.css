@@ -512,7 +512,7 @@ body {
 }
 
 /* Mobile phone */
-@media (max-width: 576px) {
+@media (max-width: 376px) {
   html {
     font-size: 60%;
   }
@@ -528,7 +528,7 @@ body {
   }
 
   .timeline li .timeline-panel {
-    width: 65%;
+    width: 50%;
     transform: translateX(-20px);
     -webkit-transform: translateX(-20px);
     -moz-transform: translateX(-20px);
