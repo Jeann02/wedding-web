@@ -44,7 +44,7 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-md bg-transparan sticky-top mynavbar"> 
-  <div class="container">
+      <div class="container">
     <a class="navbar-brand" href="#">Alyu</a>
     <!-- <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -65,8 +65,8 @@
       </div>
       </div>
     </div>
-  </div>
-</nav>
+      </div>
+    </nav>
     <!-- Navbar End -->
 
     <!-- Section Home -->
@@ -308,6 +308,7 @@
             <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran</p>
         </div>
       </div>
+
       <form
         id="my-form"
         class="row row-cols-md-auto g-3 align-items-center justify-content-center"
@@ -340,6 +341,31 @@
           <button class="btn btn-primary">Kirim</button>
         </div>
       </form>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div id="disqus_thread"></div>
+          <script>
+              /**
+              *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+              *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+              /*
+              var disqus_config = function () {
+              this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+              this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+              };
+              */
+              (function() { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = 'https://web-wedding-8.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </div>
+      </div>
+
     </section>
     <!-- Rsvp End -->
 
@@ -415,15 +441,6 @@
 
 
 
-    <!-- <script>
-      const urlParams = new URLSearchParams(window.location.search);
-      const nama = urlParams.get('n') || '';
-      const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
-      const namaContainer = document.querySelector('.hero h4 span');
-      namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
-
-      document.querySelector('#nama').value = nama;
-    </script> -->
 
     <!--waktuu  -->
     <script>
@@ -543,5 +560,7 @@
       document.querySelector('#nama').value = nama;
     </script>
     
+    <!-- Disqus -->
+    <script id="dsq-count-scr" src="//web-wedding-8.disqus.com/count.js" async></script>
   </body>
 </html>
