@@ -389,7 +389,147 @@ body {
 
 /* Gallery End */
 
+/* Rsvp Start */
+.rsvp {
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+  background-color: var(--bg);
+}
 
+.rsvp h2 {
+  color: var(--pink);
+  font-family: 'sacramento';
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+
+
+.rsvp p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.rsvp form label {
+  color: white;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  color: white;
+  border: 1px solid var(--pink);
+}
+
+.rsvp button:hover {
+  background-color: white;
+  color: var(--pink);
+  border: 1px solid var(white);
+}
+
+/* Rsvp End */
+
+
+/* Gift Start */
+
+.gifts {
+  padding-top: 10rem;
+  min-height: 70vh;
+  background-color: var(white);
+}
+
+.gifts h2 {
+  color: var(--pink);
+  font-family: 'sacramento';
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.gifts p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.gifts ul li {
+  list-style: none;
+  
+  border: none;
+}
+
+/* Gidt End */
+
+/* Footer Start */
+
+.footer {
+  background-color: var(--pink);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.footer small {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.footer a {
+  color: var(--bg);
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+.footer a:hover {
+  color: white;
+}
+
+.footer li {
+  list-style: none;
+  display: inline;
+}
+
+/* Footer End */
+
+/* Audio */
+.audio-icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height:  0;
+  text-decoration: none;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 
 /* Media Query */
@@ -519,13 +659,11 @@ body {
     font-size: 60%;
   }
 
-  .hero::before {
-    min-height: 100vh;
-  }
 
+/* 
   .main {
-    margin-top: 100px;
-  }
+    margin-top: 50px;
+  } */
 
   .simply-countdown > .simply-section {
     padding: 30px;
@@ -570,8 +708,14 @@ body {
   
   .info,
   .gallery,
-  .story {
+  .story,
+  .rsvp,
+  .gifts{
     padding-top: 30px;
+  }
+
+  .rsvp h2 {
+    font-size: 3.5rem;
   }
 
 
